@@ -1,0 +1,19 @@
+# Docs Index
+
+This folder groups the most useful operator-facing documentation for the repo.
+
+## Pages
+
+- [Architecture](architecture.md)
+- [Enterprise Practices](enterprise-practices.md)
+- [Versioning](../VERSIONING.md)
+- [Release Checklist](../RELEASE_CHECKLIST.md)
+- [Contributing](../CONTRIBUTING.md)
+- [Security](../SECURITY.md)
+
+## Suggested Reading Order
+
+1. Start with the root [`README.md`](../README.md).
+2. Read [Architecture](architecture.md) to understand the layout.
+3. Review [Versioning](../VERSIONING.md) and [Release Checklist](../RELEASE_CHECKLIST.md).
+4. Follow [Contributing](../CONTRIBUTING.md) before sending a PR.

@@ -19,6 +19,8 @@ Releases are published from the GitHub Actions `Release` workflow and should poi
 ## 📋 Table of Contents
 
 - [Versioning](#versioning)
+- [Quick Start](#quick-start)
+- [Architecture](#architecture)
 - [Modules Overview](#modules-overview)
 - [Prerequisites](#prerequisites)
 - [Project Structure](#project-structure)
@@ -433,6 +435,38 @@ Deploy prod:
 ```bash
 terraform plan -var-file="environments/prod/terraform.tfvars"
 terraform apply -var-file="environments/prod/terraform.tfvars"
+```
+
+## Quick Start
+
+For a first run in the root repo:
+
+```bash
+terraform init
+terraform plan -var-file="terraform.tfvars"
+terraform apply -var-file="terraform.tfvars"
+```
+
+For environment-specific runs:
+
+```bash
+terraform plan -var-file="environments/dev/terraform.tfvars"
+terraform apply -var-file="environments/dev/terraform.tfvars"
+```
+
+Docs index: [docs/README.md](C:/Users/ndayg/DSG-PROJECTS/terraform-modules-mythos-5/docs/README.md)
+
+## Architecture
+
+```mermaid
+flowchart LR
+  Contributor --> PR[Pull Request]
+  PR --> CI[CI checks]
+  CI --> Main[main branch]
+  Main --> Release[Release workflow]
+  Release --> Tag[v1.x.y tag]
+  Tag --> Consumer[demo-app or external app]
+  Consumer --> AWS[AWS environment]
 ```
 
 

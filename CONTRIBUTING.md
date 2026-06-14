@@ -8,6 +8,13 @@ This repository is versioned with semantic releases and is intended to stay secr
 - Keep PRs focused on a single module, fix, or doc update.
 - Merge into `main` only after validation passes.
 
+## Local Tooling
+
+- Install `pre-commit` and run `pre-commit install`.
+- Use `terraform fmt` before committing.
+- Use `terraform-docs` or the pre-commit hook to keep README input/output docs current.
+- Run `terraform validate` locally before opening a PR.
+
 ## Pull Request Checklist
 
 - [ ] Change is scoped to one purpose
