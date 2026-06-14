@@ -13,6 +13,16 @@ This repository uses semantic versioning for releases.
 Public release note: this repo is meant to remain secret-free. See [SECURITY.md](C:/Users/ndayg/DSG-PROJECTS/terraform-modules-mythos-5/SECURITY.md) before contributing.
 Releases are published from the GitHub Actions `Release` workflow and should point to a matching file under [releases/](C:/Users/ndayg/DSG-PROJECTS/terraform-modules-mythos-5/releases).
 
+## Security And Supply Chain
+
+This repository is intended to stay secret-free and safe to consume from other organizations.
+
+- Follow [`SECURITY.md`](C:/Users/ndayg/DSG-PROJECTS/terraform-modules-mythos-5/SECURITY.md) before contributing.
+- Run the PR checks in `.github/workflows/` before merging.
+- Keep release notes and version tags aligned.
+- Use [`CONTRIBUTING.md`](C:/Users/ndayg/DSG-PROJECTS/terraform-modules-mythos-5/CONTRIBUTING.md) for branch, PR, and release flow.
+- Keep consumer references pinned to a release tag, never to `main`.
+
 
 
 
