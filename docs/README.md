@@ -8,6 +8,7 @@ This folder groups the most useful operator-facing documentation for the repo.
 - [AI Quick Start](agent-quickstart.md)
 - [Branch Protection](branch-protection.md)
 - [Enterprise Practices](enterprise-practices.md)
+- [External Onboarding](onboarding.md)
 - [Repository Settings](repo-settings.md)
 - [Root Module Reference](root-module.md)
 - [AI Memory](../AI_MEMORY.md)
