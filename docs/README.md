@@ -8,6 +8,7 @@ This folder groups the most useful operator-facing documentation for the repo.
 - [Enterprise Practices](enterprise-practices.md)
 - [Repository Settings](repo-settings.md)
 - [Root Module Reference](root-module.md)
+- [AI Memory](../AI_MEMORY.md)
 - [Versioning](../VERSIONING.md)
 - [Release Checklist](../RELEASE_CHECKLIST.md)
 - [Contributing](../CONTRIBUTING.md)

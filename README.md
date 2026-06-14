@@ -22,6 +22,7 @@ This repository is intended to stay secret-free and safe to consume from other o
 - Keep release notes and version tags aligned.
 - Use [`CONTRIBUTING.md`](C:/Users/ndayg/DSG-PROJECTS/terraform-modules-mythos-5/CONTRIBUTING.md) for branch, PR, and release flow.
 - Keep consumer references pinned to a release tag, never to `main`.
+- Persistent repo memory: [`AI_MEMORY.md`](C:/Users/ndayg/DSG-PROJECTS/terraform-modules-mythos-5/AI_MEMORY.md)
 
 [![v1.0.0 Release](https://img.shields.io/badge/release-v1.0.0-blue)](https://github.com/gad0788/terraform-aws-modules-mythos/releases/tag/v1.0.0)
 [![Terraform CI](https://github.com/gad0788/terraform-aws-modules-mythos/actions/workflows/terraform-ci.yml/badge.svg)](https://github.com/gad0788/terraform-aws-modules-mythos/actions/workflows/terraform-ci.yml)
