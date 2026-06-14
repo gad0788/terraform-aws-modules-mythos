@@ -2,8 +2,11 @@
 
 This folder groups the most useful operator-facing documentation for the repo.
 
+Primary landing page: [`docs/index.md`](index.md)
+
 ## Pages
 
+- [Docs Landing Page](index.md)
 - [Architecture](architecture.md)
 - [AI Quick Start](agent-quickstart.md)
 - [Branch Protection](branch-protection.md)
