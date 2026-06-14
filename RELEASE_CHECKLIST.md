@@ -24,6 +24,7 @@ Use this checklist before publishing a module release.
 
 ## Publishing
 
+- Run the GitHub Actions `Release` workflow on `main`
 - Tag the repository with the release version, for example `v1.0.0`
 - Publish the release note
 - Communicate upgrade notes to consumer teams

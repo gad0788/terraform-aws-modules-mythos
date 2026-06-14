@@ -11,6 +11,8 @@ This repository uses semantic versioning for releases.
 - `minor` versions are for backwards-compatible additions
 - `patch` versions are for fixes and safe updates
 Public release note: this repo is meant to remain secret-free. See [SECURITY.md](C:/Users/ndayg/DSG-PROJECTS/terraform-modules-mythos-5/SECURITY.md) before contributing.
+Releases are published from the GitHub Actions `Release` workflow and should point to a matching file under [releases/](C:/Users/ndayg/DSG-PROJECTS/terraform-modules-mythos-5/releases).
+
 
 
 

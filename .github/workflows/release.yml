@@ -1,0 +1,59 @@
+name: Release
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: "Release version without the leading v, for example 1.0.1"
+        required: true
+        type: string
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    name: Create GitHub Release
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Prepare tag and notes
+        id: prep
+        shell: bash
+        run: |
+          set -euo pipefail
+          VERSION="v${{ inputs.version }}"
+          NOTES_FILE="releases/${VERSION}.md"
+
+          if git rev-parse "${VERSION}" >/dev/null 2>&1; then
+            echo "Tag ${VERSION} already exists." >&2
+            exit 1
+          fi
+
+          if [ ! -f "${NOTES_FILE}" ]; then
+            echo "Release notes file ${NOTES_FILE} does not exist." >&2
+            exit 1
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git tag "${VERSION}"
+          git push origin "${VERSION}"
+
+          {
+            echo "tag_name=${VERSION}"
+            echo "notes_file=${NOTES_FILE}"
+          } >> "$GITHUB_OUTPUT"
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ steps.prep.outputs.tag_name }}
+          name: ${{ steps.prep.outputs.tag_name }}
+          body_path: ${{ steps.prep.outputs.notes_file }}
