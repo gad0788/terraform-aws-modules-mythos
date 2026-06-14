@@ -14,19 +14,18 @@ on:
 
 jobs:
   docs:
-    name: Generate Terraform Docs
+    name: Validate Terraform Docs
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-        with:
-          ref: ${{ github.event.pull_request.head.ref }}
 
-      - name: Generate root module docs
+      - name: Validate root module docs
         uses: terraform-docs/gh-actions@v1.4.1
         with:
           working-dir: .
           output-file: docs/root-module.md
-          output-method: replace
-          git-push: "true"
+          output-method: inject
+          git-push: "false"
+          fail-on-diff: "true"
