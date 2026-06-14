@@ -5,6 +5,7 @@ This folder groups the most useful operator-facing documentation for the repo.
 ## Pages
 
 - [Architecture](architecture.md)
+- [AI Quick Start](agent-quickstart.md)
 - [Enterprise Practices](enterprise-practices.md)
 - [Repository Settings](repo-settings.md)
 - [Root Module Reference](root-module.md)

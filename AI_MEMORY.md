@@ -52,3 +52,4 @@ This file captures the stable decisions for this repository so future sessions c
 
 - Prefer updating the repo docs and workflows rather than only answering in chat.
 - If this file conflicts with live repo state, trust the repo state and update this file.
+- `AGENTS.md` and `docs/agent-quickstart.md` are the first files to read after this one.
