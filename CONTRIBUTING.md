@@ -27,6 +27,13 @@ This repository is versioned with semantic releases and is intended to stay secr
 - [ ] Run `terraform validate`
 - [ ] Create the git tag for the release, such as `v1.0.1`
 
+## Release Flow
+
+1. Merge the feature branch into `main`.
+2. Run the GitHub Actions `Release` workflow from `main`.
+3. Use the matching version note under `releases/`.
+4. Publish the release tag and notify consumers.
+
 ## Version Rules
 
 - `patch` for bug fixes and docs
