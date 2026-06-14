@@ -1,0 +1,37 @@
+environment = "prod"
+create_vpc  = true
+
+# Production typically enables more platform services.
+create_ec2           = false
+create_eks           = true
+create_s3            = true
+create_rds           = true
+create_iam           = true
+create_secrets       = true
+create_keypair       = true
+create_efs           = true
+create_ebs           = false
+create_alb           = true
+create_nlb           = false
+create_route53       = true
+create_cloudfront    = true
+create_waf           = true
+create_lambda        = false
+create_autoscaling   = true
+create_batch         = false
+create_elasticache   = true
+create_dynamodb      = true
+create_opensearch    = true
+create_cloudwatch    = true
+create_cloudtrail    = true
+create_xray          = true
+create_ecr           = true
+create_kms           = true
+create_acm           = true
+create_config        = true
+create_sns           = true
+create_sqs           = true
+create_eventbridge   = true
+create_stepfunctions = true
+create_backup        = true
+create_datasync      = false

@@ -1,0 +1,37 @@
+environment = "dev"
+create_vpc  = true
+
+# Dev is a smaller footprint. Flip any of these to true or false as needed.
+create_ec2           = true
+create_eks           = false
+create_s3            = true
+create_rds           = false
+create_iam           = true
+create_secrets       = true
+create_keypair       = true
+create_efs           = false
+create_ebs           = false
+create_alb           = true
+create_nlb           = false
+create_route53       = false
+create_cloudfront    = false
+create_waf           = false
+create_lambda        = true
+create_autoscaling   = false
+create_batch         = false
+create_elasticache   = false
+create_dynamodb      = true
+create_opensearch    = false
+create_cloudwatch    = true
+create_cloudtrail    = false
+create_xray          = false
+create_ecr           = true
+create_kms           = true
+create_acm           = false
+create_config        = false
+create_sns           = true
+create_sqs           = true
+create_eventbridge   = true
+create_stepfunctions = false
+create_backup        = false
+create_datasync      = false
