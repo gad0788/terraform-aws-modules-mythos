@@ -1,36 +1,26 @@
-# Docs Landing Page
+# Docs
 
-Start here if you need the shortest path into this repository.
+Use this page as the shortest path into the repo.
 
-## For Humans
+## Start Here
 
-1. Read [`README.md`](../README.md) for the public overview and quick start.
-2. Read [`docs/onboarding.md`](onboarding.md) if you are consuming the module.
-3. Read [`docs/release-playbook.md`](release-playbook.md) if you are publishing a release.
-4. Read [`docs/branch-protection.md`](branch-protection.md) if you manage the repo.
+- Public overview and quick start: [`README.md`](../README.md)
+- Consumer onboarding: [`docs/onboarding.md`](onboarding.md)
+- Release process: [`docs/release-playbook.md`](release-playbook.md)
+- Branch protection: [`docs/branch-protection.md`](branch-protection.md)
+- Repo settings: [`docs/repo-settings.md`](repo-settings.md)
 
 ## For AI Tools
 
-1. Read [`AI_MEMORY.md`](../AI_MEMORY.md).
-2. Read [`AGENTS.md`](../AGENTS.md).
-3. Read [`docs/agent-quickstart.md`](agent-quickstart.md).
-4. Check [`docs/repo-settings.md`](repo-settings.md).
+- Persistent context: [`AI_MEMORY.md`](../AI_MEMORY.md)
+- Agent rules: [`AGENTS.md`](../AGENTS.md)
+- Quick start: [`docs/agent-quickstart.md`](agent-quickstart.md)
 
-## Core Docs
+## More Detail
 
-- [Architecture](architecture.md)
-- [Enterprise Practices](enterprise-practices.md)
-- [External Onboarding](onboarding.md)
-- [Branch Protection](branch-protection.md)
-- [Repository Settings](repo-settings.md)
-- [Release Playbook](release-playbook.md)
-- [AI Quick Start](agent-quickstart.md)
-- [AI Memory](../AI_MEMORY.md)
-- [Contributing](../CONTRIBUTING.md)
-- [Security](../SECURITY.md)
-- [Versioning](../VERSIONING.md)
-- [Release Checklist](../RELEASE_CHECKLIST.md)
-
-## Entry Point
-
-- Root README: [`README.md`](../README.md)
+- Architecture: [`docs/architecture.md`](architecture.md)
+- Enterprise practices: [`docs/enterprise-practices.md`](enterprise-practices.md)
+- Contributing: [`CONTRIBUTING.md`](../CONTRIBUTING.md)
+- Security: [`SECURITY.md`](../SECURITY.md)
+- Versioning: [`VERSIONING.md`](../VERSIONING.md)
+- Release checklist: [`RELEASE_CHECKLIST.md`](../RELEASE_CHECKLIST.md)
