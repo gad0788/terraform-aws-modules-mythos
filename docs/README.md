@@ -1,29 +1,8 @@
-# Docs Index
+# Docs
 
-This folder groups the most useful operator-facing documentation for the repo.
+The main landing page for this folder is [`docs/index.md`](index.md).
 
-Primary landing page: [`docs/index.md`](index.md)
+Start there for the shortest path into the repo:
 
-## Pages
-
-- [Docs Landing Page](index.md)
-- [Architecture](architecture.md)
-- [AI Quick Start](agent-quickstart.md)
-- [Branch Protection](branch-protection.md)
-- [Enterprise Practices](enterprise-practices.md)
-- [External Onboarding](onboarding.md)
-- [Repository Settings](repo-settings.md)
-- [Root Module Reference](root-module.md)
-- [AI Memory](../AI_MEMORY.md)
-- [Versioning](../VERSIONING.md)
-- [Release Checklist](../RELEASE_CHECKLIST.md)
-- [Release Playbook](release-playbook.md)
-- [Contributing](../CONTRIBUTING.md)
-- [Security](../SECURITY.md)
-
-## Suggested Reading Order
-
-1. Start with the root [`README.md`](../README.md).
-2. Read [Architecture](architecture.md) to understand the layout.
-3. Review [Branch Protection](branch-protection.md), [Versioning](../VERSIONING.md), and [Release Checklist](../RELEASE_CHECKLIST.md).
-4. Follow [Contributing](../CONTRIBUTING.md) before sending a PR.
+- Humans: [`docs/index.md`](index.md)
+- AI tools: [`AGENTS.md`](../AGENTS.md) and [`AI_MEMORY.md`](../AI_MEMORY.md)
