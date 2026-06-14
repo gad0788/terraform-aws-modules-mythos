@@ -4,26 +4,9 @@ A comprehensive collection of **34 modular Terraform configurations** for provis
 
 ## Versioning
 
-This repository uses semantic versioning for releases.
+This repository uses semantic versioning. Release notes live under `releases/`, and the first stable tag is `v1.0.0`.
 
-- `v1.0.0` is the first stable module release
-- `major` versions are for breaking changes
-- `minor` versions are for backwards-compatible additions
-- `patch` versions are for fixes and safe updates
-Public release note: this repo is meant to remain secret-free. See [SECURITY.md](C:/Users/ndayg/DSG-PROJECTS/terraform-modules-mythos-5/SECURITY.md) before contributing.
-Releases are published from the GitHub Actions `Release` workflow and should point to a matching file under [releases/](C:/Users/ndayg/DSG-PROJECTS/terraform-modules-mythos-5/releases).
-
-## Security And Supply Chain
-
-This repository is intended to stay secret-free and safe to consume from other organizations.
-
-- Follow [`SECURITY.md`](C:/Users/ndayg/DSG-PROJECTS/terraform-modules-mythos-5/SECURITY.md) before contributing.
-- Run the PR checks in `.github/workflows/` before merging.
-- Keep release notes and version tags aligned.
-- Use [`CONTRIBUTING.md`](C:/Users/ndayg/DSG-PROJECTS/terraform-modules-mythos-5/CONTRIBUTING.md) for branch, PR, and release flow.
-- Keep consumer references pinned to a release tag, never to `main`.
-- Persistent repo memory: [`AI_MEMORY.md`](C:/Users/ndayg/DSG-PROJECTS/terraform-modules-mythos-5/AI_MEMORY.md)
-- Docs landing page: [`docs/index.md`](C:/Users/ndayg/DSG-PROJECTS/terraform-modules-mythos-5/docs/index.md)
+For public usage, start at [`docs/index.md`](C:/Users/ndayg/DSG-PROJECTS/terraform-modules-mythos-5/docs/index.md) or [`CONTRIBUTING.md`](C:/Users/ndayg/DSG-PROJECTS/terraform-modules-mythos-5/CONTRIBUTING.md) if you plan to change the repo.
 
 [![v1.0.0 Release](https://img.shields.io/badge/release-v1.0.0-blue)](https://github.com/gad0788/terraform-aws-modules-mythos/releases/tag/v1.0.0)
 [![Terraform CI](https://github.com/gad0788/terraform-aws-modules-mythos/actions/workflows/terraform-ci.yml/badge.svg)](https://github.com/gad0788/terraform-aws-modules-mythos/actions/workflows/terraform-ci.yml)
@@ -431,32 +414,9 @@ For issues or questions:
 **Terraform Version:** >= 1.0
 **AWS Provider Version:** >= 5.0
 
-## Environment Workflow
-
-Use the shared base file plus the environment overlay you want:
-
-- `terraform.tfvars` for shared defaults
-- `environments/dev/terraform.tfvars` for dev
-- `environments/prod/terraform.tfvars` for prod
-
-Deploy dev:
-
-```bash
-terraform init
-terraform plan -var-file="environments/dev/terraform.tfvars"
-terraform apply -var-file="environments/dev/terraform.tfvars"
-```
-
-Deploy prod:
-
-```bash
-terraform plan -var-file="environments/prod/terraform.tfvars"
-terraform apply -var-file="environments/prod/terraform.tfvars"
-```
-
 ## Quick Start
 
-For a first run in the root repo:
+For a first run, use the root defaults:
 
 ```bash
 terraform init
@@ -464,14 +424,14 @@ terraform plan -var-file="terraform.tfvars"
 terraform apply -var-file="terraform.tfvars"
 ```
 
-For environment-specific runs:
+For dev or prod, use the matching overlay and swap `dev` for `prod` as needed:
 
 ```bash
 terraform plan -var-file="environments/dev/terraform.tfvars"
 terraform apply -var-file="environments/dev/terraform.tfvars"
 ```
 
-Docs index: [docs/README.md](C:/Users/ndayg/DSG-PROJECTS/terraform-modules-mythos-5/docs/README.md)
+Docs index: [docs/index.md](C:/Users/ndayg/DSG-PROJECTS/terraform-modules-mythos-5/docs/index.md)
 
 ## Architecture
 
