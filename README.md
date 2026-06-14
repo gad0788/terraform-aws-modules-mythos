@@ -23,6 +23,10 @@ This repository is intended to stay secret-free and safe to consume from other o
 - Use [`CONTRIBUTING.md`](C:/Users/ndayg/DSG-PROJECTS/terraform-modules-mythos-5/CONTRIBUTING.md) for branch, PR, and release flow.
 - Keep consumer references pinned to a release tag, never to `main`.
 
+[![Terraform CI](https://github.com/gad0788/terraform-aws-modules-mythos/actions/workflows/terraform-ci.yml/badge.svg)](https://github.com/gad0788/terraform-aws-modules-mythos/actions/workflows/terraform-ci.yml)
+[![Checkov](https://github.com/gad0788/terraform-aws-modules-mythos/actions/workflows/checkov.yml/badge.svg)](https://github.com/gad0788/terraform-aws-modules-mythos/actions/workflows/checkov.yml)
+[![Release](https://github.com/gad0788/terraform-aws-modules-mythos/actions/workflows/release.yml/badge.svg)](https://github.com/gad0788/terraform-aws-modules-mythos/actions/workflows/release.yml)
+
 
 
 

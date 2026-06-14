@@ -1,0 +1,32 @@
+name: Terraform Docs
+
+on:
+  pull_request:
+    branches:
+      - main
+    paths:
+      - "main.tf"
+      - "variables.tf"
+      - "outputs.tf"
+      - "modules/**"
+      - "docs/**"
+      - ".github/workflows/terraform-docs.yml"
+
+jobs:
+  docs:
+    name: Generate Terraform Docs
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.ref }}
+
+      - name: Generate root module docs
+        uses: terraform-docs/gh-actions@v1.4.1
+        with:
+          working-dir: .
+          output-file: docs/root-module.md
+          output-method: replace
+          git-push: "true"

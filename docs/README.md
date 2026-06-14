@@ -6,6 +6,8 @@ This folder groups the most useful operator-facing documentation for the repo.
 
 - [Architecture](architecture.md)
 - [Enterprise Practices](enterprise-practices.md)
+- [Repository Settings](repo-settings.md)
+- [Root Module Reference](root-module.md)
 - [Versioning](../VERSIONING.md)
 - [Release Checklist](../RELEASE_CHECKLIST.md)
 - [Contributing](../CONTRIBUTING.md)
